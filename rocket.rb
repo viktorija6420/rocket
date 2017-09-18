@@ -1,7 +1,9 @@
+require 'pry'
 class Rocket
   def initialize(options = {})
     @name = options[:name] || random_name
     @colour = options[:colour] || random_colour
+    # binding.pry
     @flying = options[:flying] || false
   end
 
@@ -9,7 +11,9 @@ class Rocket
     @name
   end
 
-  def name=(new_name)
+  def name=(new_name) #returns the name. If you make a rocket and you
+                      #call this method does it return the name? Test that.give
+                      #it a different name, test.See if it works.
     @name = new_name
   end
 
